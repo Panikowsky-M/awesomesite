@@ -4,6 +4,22 @@
 		<link rel=stylesheet href=styles/0style.css>
 		<script type=text/javascript src=scripts/0script.js></script>
 		<script type=text/javascript src=scripts/1script.js></script>
+		<script>
+			function recieveXHR(){
+			       var xhr = new XMLHttpRequest();
+			       xhr.open("GET","http://www.victim.com/test.txt",true);
+			       xhr.setRequestHeader("Origin","http://www.victim.com/");
+			       xhr.send();
+			     
+			       	if( xhr.status != 200) {
+			       	  alert(xhr.status + ': ' + xhr.statusText);
+			       	}
+			       	else 
+			       	{
+			       		alert(xhr.responseText);
+			       	}
+			       }
+			</script>
 		<title>Проверка скриптов</title>
 	</head>
 	<body>
@@ -12,5 +28,7 @@
 		<button class=button onclick="hey( )">Не нажимать</button></br>
 		<button class=button onclick="addElement( )">Это тоже не нажимать</button>
 		<button class=button onclick="SendXHR( )">Парсинг json</button>
+		</br>
+		<button class=button onclick="recieveXHR( )">Прием данных по XHR</button>
 	</body>
 </html>

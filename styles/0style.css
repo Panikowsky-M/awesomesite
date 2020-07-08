@@ -12,3 +12,14 @@
 	border: 2px ridge pink;
 	background: purple;
 }
+
+.paragraph {
+	font-family: Sans;
+}
+
+.console {
+	font-family: Monospace;
+	color: orange;
+	background:black;
+
+}
