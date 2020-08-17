@@ -1,14 +1,14 @@
 <html>
 	<head>
 		<meta charset=utf-8>
-		<link rel=stylesheet href=styles/0style.css>
+		<link rel=stylesheet href=styles/1style.css>
 		<script type=text/javascript src=scripts/0script.js></script>
 		<script type=text/javascript src=scripts/1script.js></script>
+		<script type=text/javascript src=scripts/5script.js></script>
 		<script>
 			function recieveXHR(){
 			       var xhr = new XMLHttpRequest();
-			       xhr.open("GET","http://www.victim.com/test.txt",true);
-			       xhr.setRequestHeader("Origin","http://www.victim.com/");
+			       xhr.open("GET","http://www.victim.com/test.txt",false);
 			       xhr.send();
 			     
 			       	if( xhr.status != 200) {
@@ -30,5 +30,7 @@
 		<button class=button onclick="SendXHR( )">Парсинг json</button>
 		</br>
 		<button class=button onclick="recieveXHR( )">Прием данных по XHR</button>
+		<button class=button onclick="XHRrx( )">XHR дубль 2</button>
+		<p id=userinfo></p>
 	</body>
 </html>

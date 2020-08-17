@@ -2,29 +2,46 @@
 	<head>
 		<meta charset=utf-8>
 		<title>Html escaping test</title>
-<style>
-	.li{
-		font-family:Sans;
-		font-style: Italic;
-		color:green;
-	}
-</style>
+		<link rel=stylesheet href=styles/2style.css>
 	</head>
 <body>
-<h1>Вход в bWAPP</h1>
-<a class=li href=http://www.awesomesite.com/bWAPP/install.php?>Запустить bWAPP</a>
+<!--<h2>Вход в bWAPP</h2>
+<a class=li href=http://www.awesomesite.com/bWAPP/install.php?>Запустить bWAPP</a>--!>
 <h1>All this text in &lt/h1&gt is amazing !</h1>
 <p>Эта надпись парсится корректно</p>
 
-<a class=li href=http://www.awesomesite.com/1page.html>Проверка ифрейма</a></br>
+<div id=table1>
+	<div id=content>
+	<div class=header>
+		<h6>Содержание</h6>
+	</div>
+	<div class=content>
+		<table id=puncts>
+		  <thead><tr> <th>Ссылка</th> </tr> </thead>
+         <tbody>
+	  <tr>
+             <td> <a href=http://www.awesomesite.com/1page.html>Проверка ифрейма</a></td>
+	 </tr>
+ 
+	  <tr>
+	     <td><a href=http://www.awesomesite.com/2page.html>Проверка скриптов</a></td>
+	  </tr>
 
-<a class=li href=http://www.awesomesite.com/2page.html>Проверка скриптов</a></br>
+	 <tr>
+	  <td><a href=http://www.awesomesite.com/3page.html>Проверка установки CSP</a></td>
+	 </tr>
 
-<a class=li href=http://www.awesomesite.com/3page.html>Проверка установки CSP</a></br>
+         <tr>
+	  <td><a href=http://www.awesomesite.com/4page.html>Проверка проставки кук</a></td>
+	</tr>
 
-<a class=li href=http://www.awesomesite.com/4page.html>Проверка проставки кук</a></br>
-
-<a class=li href=http://www.awesomesite.com/5page.html>Куки дубль 2</a></br>
-
+         <tr>
+	  <td><a href=http://www.awesomesite.com/5page.html>Куки дубль 2</a></td>
+	</tr>
+	
+        <tr>
+	  <td><a href=http://www.awesomesite.com/6page.html>Проверка postMessage</a></td>
+	</tr>
+	</tbody>	 	 
 </body>
 </html>
